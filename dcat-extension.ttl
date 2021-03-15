@@ -128,11 +128,22 @@ dct:relation rdf:type owl:ObjectProperty .
                                                rdfs:range <http://purl.org/fdp/dcat-extension/Guideline> .
 
 
+###  http://purl.org/fdp/dcat-extension/hasMetadata
+<http://purl.org/fdp/dcat-extension/hasMetadata> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://purl.org/fdp/dcat-extension/metadataOf> ;
+                                                 rdfs:label "hasMetadata"^^xsd:string .
+
+
 ###  http://purl.org/fdp/dcat-extension/mapping
 <http://purl.org/fdp/dcat-extension/mapping> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf dct:hasPart ;
                                              rdfs:domain dcat:Catalog ;
                                              rdfs:range <http://purl.org/fdp/dcat-extension/Mapping> .
+
+
+###  http://purl.org/fdp/dcat-extension/metadataOf
+<http://purl.org/fdp/dcat-extension/metadataOf> rdf:type owl:ObjectProperty ;
+                                                rdfs:label "metadataOf"^^xsd:string .
 
 
 ###  http://purl.org/fdp/dcat-extension/patientRegistry
